@@ -1,3 +1,6 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +15,24 @@
     <title>Rent a car EF - Ours Services</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/WEB-INF/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href= "<c:url value='/resources/css/bootstrap.min.css' />" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/WEB-INF/css/one-page-wonder.css" rel="stylesheet">
+    <link href= "<c:url value='/resources/css/shop-homepage.css'/>"  rel="stylesheet">
+    <link href= "<c:url value='/resources/css/one-page-wonder.css'/>"  rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script  src="<c:url value='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'/>"></script>
+        <script  src="<c:url value='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'/>"></script>
     <![endif]-->
 
+
+    <link rel="stylesheet" href="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'/>">
+    <script src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'/>"></script>
+    <script src="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'/>"></script>
 </head>
 
 <body>
@@ -39,26 +48,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../Client/HomePage.html">Rent a car EF</a>
+                <a class="navbar-brand" href="homePage">Rent a car EF</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="../Client/Search.html">Search a Car</a>
+                        <a href="Search">Search a Car</a>
                     </li>
                     <li>
-                        <a href="../Client/Services.html">Services</a>
+                        <a href="Services">Services</a>
                     </li>
                     <li>
-                        <a href="../Client/Contactus.html">Contact Us</a>
+                        <a href="ContactUs">Contact Us</a>
                     </li>
 
                     <li>
 
                     </li>
-
-
                 </ul>
 
             </div>
@@ -97,7 +104,7 @@
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="../Client/pictures/book.jpg">
+            <img class="featurette-image img-circle img-responsive pull-left" src="/resources/pictures/book.jpg">
             <h2 class="featurette-heading">Book 
                 <span class="text-muted">right on time, 24/7</span>
             </h2>
@@ -108,7 +115,7 @@
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="../Client/pictures/drive.jpg">
+            <img class="featurette-image img-circle img-responsive pull-right" src="/resources/pictures/drive.jpg">
             <h2 class="featurette-heading">Drive
                 <span class="text-muted">you and the car, you are one </span>
             </h2>
@@ -132,10 +139,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="/resources/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
 
 </body>
 

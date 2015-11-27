@@ -1,3 +1,6 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,22 +15,25 @@
     <title>Rent a car EF - Contact us</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href= "<c:url value='/resources/css/bootstrap.min.css'/>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/resources/css/shop-homepage.css" rel="stylesheet">
+    <link href= "<c:url value='/resources/css/shop-homepage.css'/>"  rel="stylesheet">
+    <link href= "<c:url value='/resources/css/one-page-wonder.css'/>"  rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+        <script  src="<c:url value='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'/>"></script>
+        <script  src="<c:url value='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'/>"></script>
+
     <![endif]-->
 
-  
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'/>">
+    <script src="<c:url value='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'/>"></script>
+    <script src="<c:url value='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'/>"></script>
+
 
 </head>
 
@@ -92,7 +98,7 @@
                 <h2 class="page-header">Our Team</h2>
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="../Client/pictures/Ed.jpg" alt="">
+                <img class="img-circle img-responsive img-center" src="resources/pictures/Ed.jpg" alt="">
                 <h3>Edgarson Romeus
                     <small>CEO</small>
                 </h3>
@@ -102,7 +108,7 @@
 
             </div>
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="../Client/pictures/Frank.jpg" alt="">
+                <img class="img-circle img-responsive img-center" src="resources/pictures/Frank.jpg" alt="">
                 <h3>Juan Francisco Sigaran Ramos
                     <small>CEO</small>
                 </h3>
@@ -130,10 +136,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="resources/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
 
 </body>
 
